@@ -60,8 +60,8 @@ export default function Carousel() {
 
   if (!isMounted) {
     return (
-      <section className="py-24 relative overflow-hidden bg-black">
-        <div className="container mx-auto px-4">
+      <section className="py-12 relative overflow-hidden bg-black">
+        <div className="container max-w-6xl px-4">
           <div className="text-center mb-12">
             <h2 className="font-stay-wild text-3xl md:text-5xl font-bold mb-6">Featured Showcases</h2>
             <p className="font-orkney text-lg text-gray-300 max-w-2xl mx-auto">
@@ -113,7 +113,7 @@ export default function Carousel() {
 
         <div className="relative h-[800px] md:h-[600px] rounded-2xl overflow-hidden z-10">
           {/* Glowing gradient background */}
-          <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-gradient-radial from-purple-500 via-blue-500 to-transparent rounded-full blur-3xl opacity-20 z-0 pointer-events-none" />
+          <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-gradient-radial from-purple-500 via-amber-500 to-transparent rounded-full blur-3xl opacity-20 z-0 pointer-events-none" />
 
           <AnimatePresence mode="wait">
             {slides.map(
@@ -131,9 +131,9 @@ export default function Carousel() {
                   >
                     {/* Top-right image */}
                     <div className="absolute inset-0 z-0">
-                      <div className="absolute -top-10 -right-10 w-[300px] h-[300px] scale-90 md:scale-100 rounded-full bg-gradient-to-br from-purple-500 via-blue-500 to-cyan-500 blur-3xl opacity-40 animate-pulse" />
+                      <div className="absolute -top-10 -right-10 w-[300px] h-[300px] scale-90 md:scale-100 rounded-full bg-gradient-to-br from-purple-500 via-purle-500 to-amber-500 blur-3xl opacity-40 animate-pulse" />
                       <div
-                        className="absolute top-0 right-0 w-[500px] h-[800px] bg-no-repeat bg-contain bg-top-right"
+                        className="absolute top-0 right-0 w-[500px] h-[800px] bg-no-repeat bg-contain bg-top-right -rotate-12"
                         style={{ backgroundImage: `url(${slide.image})` }}
                       />
                     </div>

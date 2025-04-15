@@ -1,6 +1,7 @@
 import type React from "react"
 import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import Navbar from "@/components/navbar"
 
 export const metadata = {
   title: "Cosmos - Digital Universe",
@@ -20,6 +21,7 @@ export default function RootLayout({
       </head>
       <body>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <Navbar />
           {children}
         </ThemeProvider>
       </body>

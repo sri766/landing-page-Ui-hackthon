@@ -22,13 +22,13 @@ export default function BentoBox({ features }: BentoBoxProps) {
           Why Choose Us?
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-2 auto-rows-[200px]">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-2 auto-rows-[200px] font-ornkey">
           {features.map((feature, index) => (
             <motion.div
               key={index}
               whileHover={{ scale: 1.03 }}
               transition={{ type: "spring", stiffness: 300 }}
-              className={`relative rounded-2xl p-6 border border-slate-700 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden bg-slate-800/60 bg-blend-overlay bg-cover bg-center ${
+              className={`relative rounded-2xl p-6 border border-slate-700 shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden bg-slate-800/60 bg-cover bg-center ${
                 feature.span || ""
               }`}
               style={{

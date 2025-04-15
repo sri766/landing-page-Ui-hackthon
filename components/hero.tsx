@@ -118,14 +118,12 @@ export default function Hero() {
           >
             <Button
               size="lg"
-              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 font-orkney"
+              className="bg-gradient-to-r rounded-full from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 font-orkney"
             >
               Get Started
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            <Button size="lg" variant="outline" className="border-gray-700 hover:bg-gray-800 font-orkney">
-              Learn More
-            </Button>
+
           </motion.div>
         </div>
       </div>

@@ -12,7 +12,7 @@ const features = [
   {
     title: "Responsive Design",
     description: "Perfectly optimized for all devices and screen sizes.",
-    image: "/assets/a.jpeg",
+    image: "/assets/a1.gif",
   },
   {
     title: "Smooth Animations",
@@ -24,12 +24,12 @@ const features = [
     title: "Clean Code",
     description: "Readable, scalable, and maintainable code architecture.",
     span: "col-span-2",
-    image: "/assets/c.jpeg",
+    image: "/assets/f.gif",
   },
   {
     title: "Custom UI",
     description: "Designs tailored specifically for your brand and audience.",
-    image: "/assets/d.jpeg",
+    image: "/assets/c1.gif",
   },
   {
     title: "Blazing Fast",
@@ -39,7 +39,7 @@ const features = [
   {
     title: "Modern Tech Stack",
     description: "Built with Next.js, Tailwind, and more.",
-    image: "/assets/f.jpeg",
+    image: "/assets/f1.gif",
     span: "col-span-1",
   },
 ]

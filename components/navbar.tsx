@@ -47,16 +47,15 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            {["Features", "About", "Pricing", "Contact"].map((item) => (
+            {["Home","Features", "About", "Contact"].map((item) => (
               <Link
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                href={`/${item.toLowerCase()}`}
                 className="text-sm font-medium hover:text-primary transition-colors"
               >
                 {item}
               </Link>
             ))}
-            <Button>Get Started</Button>
           </div>
 
           <div className="md:hidden">
@@ -88,7 +87,7 @@ export default function Navbar() {
         </motion.div>
 
         <div className="hidden md:flex items-center space-x-8 font-orkney">
-          {["Features", "About", "Pricing", "Contact"].map((item, i) => (
+          {["Features", "About", "Contact"].map((item, i) => (
             <motion.div
               key={item}
               initial={{ opacity: 0, y: -10 }}
@@ -96,7 +95,7 @@ export default function Navbar() {
               transition={{ duration: 0.5, delay: 0.1 * i }}
             >
               <Link
-                href={`#${item.toLowerCase()}`}
+                href={`/${item.toLowerCase()}`}
                 className="text-sm font-medium hover:text-primary transition-colors"
               >
                 {item}
@@ -108,7 +107,6 @@ export default function Navbar() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
           >
-            <Button>Get Started</Button>
           </motion.div>
         </div>
 
@@ -122,7 +120,7 @@ export default function Navbar() {
             </SheetTrigger>
             <SheetContent side="right" className="bg-black/95 text-white border-neutral-800">
               <nav className="flex flex-col gap-4 mt-8">
-                {["Features", "About", "Pricing", "Contact"].map((item) => (
+                {["Features", "About", "Contact"].map((item) => (
                   <Link
                     key={item}
                     href={`#${item.toLowerCase()}`}
